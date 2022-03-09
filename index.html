@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Line Type</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="center-content">
+      <header>
+        <h1 id="logo" href="index.html">Line Type</h1>
+        <div></div>
+        <div class="button" id="enter-text">Enter Text</div>
+      </header>
+      <main>
+        <div id="trailing-line"></div>
+        <div id="typing-line"></div>
+        <div id="wpm">-</div>
+      </main>
+      <footer></footer>
+    </div>
+    <div id="popup" class="popup-container hidden">
+      <form>
+        <h2>Enter custom text</h2>
+        <textarea name="submit" id="text-input" cols="30" rows="10"></textarea>
+        <div type="submit" id="submit" class="button">Submit</div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
