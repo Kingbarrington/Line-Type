@@ -49,6 +49,7 @@ const textToArray = (txt) => {
 
   submitButton.onmousedown = () => {
     typing = false;
+    errors = 0;
     wordRemover();
     seconds = 0;
     minutes = 0;
@@ -77,7 +78,7 @@ window.onkeydown = (e) => {
     typing = true;
     input = "&nbsp;";
   }
-
+  console.log(errors)
   if (input === current.innerHTML) {
     current.style.color = "#444";
     typingLine.style.borderColor = "white";
